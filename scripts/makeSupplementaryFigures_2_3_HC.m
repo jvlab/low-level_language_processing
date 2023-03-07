@@ -31,7 +31,7 @@ stimulusSpecs.processedFileName = strcat(filePath, '/', stimulusSpecs.processedF
 
 if isfile(stimulusSpecs.processedFileName)
 	load(stimulusSpecs.processedFileName);
-    disp(strcat("Loaded NSE from ", stimulusSpecs.processedFileName), ".");
+    disp(strcat("Loaded NSE from ", stimulusSpecs.processedFileName, "."));
 else
 	stimulus = preprocessStimulusNSE(stimulusSpecs);
 	save(stimulusSpecs.processedFileName, 'stimulus');
